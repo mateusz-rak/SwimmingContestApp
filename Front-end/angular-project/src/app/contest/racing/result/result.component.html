@@ -1,0 +1,24 @@
+<div class="center">
+  <table class="table table-trapped">
+    <thead>
+      <tr>
+        <th>Position</th>
+        <th>Contestant name</th>
+        <th>Contestant surname</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let result of results">
+        <td>{{result.position}} </td>
+        <td>{{result.contestant.name}} </td>
+        <td>{{result.contestant.surname}} </td>
+        <td><button style='color:darkred' (click)="deleteResult(result.id)">Delete result</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="center">
+  <button [routerLink]="['/contest', idContest,'racing', idRacing, 'result','createResult' ]"
+    routerLinkActive="active">Create result</button>
+  <button [routerLink]="['/contest', idContest,'racing']" routerLinkActive="active">Back</button>
+</div>

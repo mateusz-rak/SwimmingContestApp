@@ -1,0 +1,16 @@
+<div class="center">
+  <div class="form-group">{{'Distance [KM] '}}<input [(ngModel)]="distance" required pattern="[0-9]*"
+      #ifdistance="ngModel">
+    <div class="alert alert-danger" *ngIf="!!ifdistance.errors?.pattern">Distance must be a number!</div>
+  </div>
+  <div class="form-group">
+    {{'Type'}}
+    <select [(ngModel)]="type">
+      <option>Front_crawl</option>
+      <option>Butterfly_stroke</option>
+      <option>Breaststroke</option>
+    </select>
+  </div>
+  <button (click)="createRacing()">Create racing</button>
+  <button [routerLink]="['/contest', id, 'racing']" routerLinkActive="active">Back</button>
+</div>

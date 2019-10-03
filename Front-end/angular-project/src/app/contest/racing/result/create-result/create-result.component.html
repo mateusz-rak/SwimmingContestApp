@@ -1,0 +1,15 @@
+<div class = "center">
+<div class="form-group">{{'Position [1-8]'}}<input [(ngModel)]="position" required pattern="[1-8]" #ifposition="ngModel">
+  <div class="alert alert-danger" *ngIf="!!ifposition.errors?.pattern">Wrong position!</div>
+</div>
+<div class="form-group">
+  {{'Contestant'}}
+  <select id="contestant" name="contestant" [(ngModel)]="idContestant">
+    <option *ngFor="let contestant of contestants" [value]=contestant.id>
+      {{contestant.name}} {{contestant.surname}}
+    </option>
+  </select>
+</div>
+<button (click)="createResult()">Create result</button>
+<button [routerLink]="['/contest', id, 'racing', idRacing,'result']" routerLinkActive="active">Back</button>
+</div>

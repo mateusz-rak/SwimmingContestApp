@@ -1,0 +1,22 @@
+<div class="center">
+    <table class="table table-trapped">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Distance [KM]</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let racing of racings">
+          <td>{{racing.type}} </td>
+          <td>{{racing.distance}}</td>
+          <td><button style='color:darkred' (click)="deleteRacing(racing.id)">Delete racing</button></td>
+          <td><button [routerLink]="['/contest', id,'racing',racing.id,'result' ]" routerLinkActive="active" >Show result</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<div class= "center">
+<button  [routerLink]="['/contest', id,'racing','createRacing' ]" routerLinkActive="active">Create racing</button>
+<button  routerLink="/contest" routerLinkActive="active">Back</button>
+</div>

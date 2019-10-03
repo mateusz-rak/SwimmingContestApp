@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="hibernate-core-5.4.2.Final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../hibernate-core-5.4.2.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../javax.persistence-api-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jaxrs-api-3.0.12.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../lombok-1.18.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../mysql-connector-java-5.1.47.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../resteasy-jsapi-3.0.24.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../hibernate-commons-annotations-5.0.1.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

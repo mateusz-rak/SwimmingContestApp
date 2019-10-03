@@ -1,0 +1,12 @@
+<div class="center">
+  <div class="form-group">{{'Location '}}<input [(ngModel)]="location" required pattern="[A-Z]+[a-z]*"
+      #iflocation="ngModel">
+    <div class="alert alert-danger" *ngIf="!!iflocation.errors?.pattern">Wrong location!</div>
+  </div>
+  <div>{{'Date '}}<input [(ngModel)]="date" type='text' bsDatepicker [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }">
+  </div>
+  <button (click)="createContest()">Create contest</button>
+  <button routerLink="/contest" routerLinkActive="active">Back</button>
+</div>
+
+

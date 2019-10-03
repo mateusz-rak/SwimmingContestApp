@@ -1,0 +1,20 @@
+<div class= "center">
+  <div class="form-group">{{'Name'}}<input [(ngModel)]="name" required pattern="[A-Z]+[a-z]*" #ifname="ngModel">
+    <div class="alert alert-danger" *ngIf="!!ifname.errors?.pattern">Wrong name!</div>
+  </div>
+  <div class="form-group">{{'Surname'}}<input [(ngModel)]="surname" required pattern="[A-Z]+[a-z]*" #ifsurname="ngModel">
+    <div class="alert alert-danger" *ngIf="!!ifsurname.errors?.pattern">Wrong surname!</div>
+  </div>
+  <div class="form-group">
+    {{'Sex'}}
+    <select [(ngModel)]="sex">
+      <option>Man</option>
+      <option>Woman</option>
+    </select>
+  </div>
+  <div class="form-group">{{'Age'}}<input required pattern="[0-9]*" #ifage="ngModel" [(ngModel)]="age">
+    <div class="alert alert-danger" *ngIf="!!ifage.errors?.pattern">Age must be a number!</div>
+  </div>
+  <button (click)="createContestant()">Create contestant</button>
+  <button routerLink="/contestant" routerLinkActive="active">Back</button>
+</div>

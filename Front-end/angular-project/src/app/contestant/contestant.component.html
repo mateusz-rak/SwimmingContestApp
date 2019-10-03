@@ -1,0 +1,25 @@
+<div class="center">
+  <table class="table table-trapped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Sex</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contestant of contestants | async">
+        <td>{{contestant.name }} </td>
+        <td>{{contestant.surname}}</td>
+        <td>{{contestant.sex}}</td>
+        <td>{{contestant.age}}</td>
+        <td><button [routerLink]="['/contestant', contestant.id]" routerLinkActive="active">Update contestant</button></td>
+        <td><button style='color:darkred' (click)="deleteContestant(contestant.id)">Delete contestant</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="center">
+  <button routerLink="/contestant/createContestant" routerLinkActive="active">Create contestant</button>
+</div>

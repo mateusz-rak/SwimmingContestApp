@@ -1,0 +1,21 @@
+<div class="center">
+  <table class="table table-trapped">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contest of contests">
+        <td>{{contest.date }} </td>
+        <td>{{contest.location}}</td>
+        <td><button style='color:darkred' (click)="deleteContest(contest.idContest)">Delete contest</button></td>
+        <td><button [routerLink]="['/contest', contest.idContest, 'racing']"
+            routerLinkActive="active">Show racing</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="center">
+    <button routerLink="/contest/createContest" routerLinkActive="active">Create contest</button>
+  </div>

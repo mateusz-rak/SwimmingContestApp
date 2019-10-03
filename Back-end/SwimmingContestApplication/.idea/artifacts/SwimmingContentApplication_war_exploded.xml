@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SwimmingContentApplication:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SwimmingContentApplication_war_exploded.war</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SwimmingContentApplication/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SwimmingContentApplication" />
+          <element id="jpa-descriptors" facet="SwimmingContentApplication/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="byte-buddy-dep-1.9.10" />
+          <element id="library" level="project" name="commons-lang3-3.9" />
+          <element id="library" level="project" name="jackson-annotations-2.9.9" />
+          <element id="library" level="project" name="jackson-core-2.9.9" />
+          <element id="library" level="project" name="jackson-databind-2.9.9" />
+          <element id="library" level="project" name="jaxrs-api-3.0.12.Final" />
+          <element id="library" level="project" name="JPA 2.0-2.0" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.47" />
+          <element id="library" level="project" name="resteasy-jaxrs-2.3.2.Final" />
+          <element id="library" level="project" name="resteasy-jsapi-3.0.24.Final" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="resteasy-jaxrs-2.3.2.Final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../resteasy-jaxrs-2.3.2.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
